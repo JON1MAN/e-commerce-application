@@ -13,7 +13,7 @@ services:
       - user-service-data:/var/lib/postgresql/data
     networks:
       - user-service-network
-    restart: unless-stopped
+    restart: always
 
 networks:
   user-service-network:
